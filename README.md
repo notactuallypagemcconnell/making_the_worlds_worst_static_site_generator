@@ -24,3 +24,27 @@ However, let us start with the very first iteration: a Ruby script thats just a 
 
 
 ## Version 1
+Let's peek at the code.
+
+```ruby
+#!/bin/ruby
+
+require 'kramdown'
+
+def main
+  base = File.read("index.html")
+
+  html_docs = `ls posts`.split("\n").map do |file|
+                Kramdown::Document.new(File.read("posts/#{file}")).to_html
+              end
+  puts base + html_docs.join("\n")
+end
+
+main
+```
+
+So we have a directory of posts.
+We convert them to html, and concat everything after the normal main page.
+Cool, whatever.
+This is not complex at all.
+We have a problem.
