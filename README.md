@@ -23,7 +23,7 @@ We will see at the end.
 However, let us start with the very first iteration: a Ruby script thats just a few lines.
 
 
-## Version 1
+## Version 1: A Single Ruby File
 Let's peek at the code.
 
 ```ruby
@@ -48,3 +48,15 @@ We convert them to html, and concat everything after the normal main page.
 Cool, whatever.
 This is not complex at all.
 We have a problem.
+
+
+## Version 2: An Object Oriented Ruby Solution
+
+## Version 3: Adding some tests
+
+## Version 4: Clone it in Elixir
+
+## Version 5: Make an Elixir Escript to Run the Ruby Code
+
+## Version 6: Wrap it all in Docker in the Most Inefficient Way Possible
+
